@@ -1,0 +1,58 @@
+.auth-form {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 40px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  background: var(--bg-accent-color);
+  border-radius: 15px;
+  color: var(--heading-color);
+}
+
+.auth-form input {
+  background-color: transparent;
+  color: var(--heading-color);
+}
+
+.auth-form input:is(:focus, :active) {
+  outline: 4px solid var(--highlight-color);
+}
+
+.auth-form h2 {
+  border-bottom: 4px solid var(--highlight-color);
+  display: inline-block;
+}
+
+.auth-form p:first-of-type {
+  margin-top: 25px;
+}
+
+.auth-form a {
+  color: var(--highlight-color);
+}
+
+.auth-form .center {
+  text-align: center;
+}
+
+.burner-account {
+  color: var(--highlight-color);
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .auth-form {
+    padding: 40px 20px;
+    margin: 40px 0;
+  }
+
+  .auth-form input,
+  .auth-form label,
+  .auth-form p {
+    font-size: 0.9em;
+  }
+  .auth-form h2 {
+    font-size: 1.2em;
+  }
+}

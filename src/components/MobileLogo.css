@@ -1,0 +1,23 @@
+.mobile-logo-container {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.mobile-logo-container .mobile-logo {
+  font-weight: bold;
+  color: var(--heading-color);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.mobile-logo-container .mobile-logo span {
+  font-size: 1.2em;
+  border-bottom: 4px solid var(--highlight-color);
+}
+.mobile-logo-container .mobile-logo img {
+  margin-right: 10px;
+  width: 65px;
+  margin-top: -8px;
+}

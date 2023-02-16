@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--highlight-color);
+  font-size: 0.9em;
+  padding: 50px 0 15px 0;
+}
+
+.footer a,
+.footer a:visited {
+  color: var(--highlight-color);
+}

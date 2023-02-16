@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* variables */
+:root {
+  --heading-color: #e7f6f2;
+  --text-color: #fff;
+  --primary-color: #395b64;
+  --highlight-color: #a5c9ca;
+  --bg-color: #2c3333;
+  --bg-accent-color: #222222;
+}
+
+/* base styles */
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  font-size: 1.1em;
+  background: var(--bg-color);
+  min-height: calc(100vh - 150px);
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* layout */
+.page-title {
+  font-size: 1em;
+  color: var(--heading-color);
+  display: block;
+  border-bottom: 2px solid var(--highlight-color);
+}
+
+.btn {
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--heading-color);
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid var(--highlight-color);
+}
+
+.btn:hover {
+  color: var(--bg-color);
+  background-color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
+}
+
+/* forms */
+label {
+  display: block;
+  margin: 24px auto;
+}
+
+label span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: var(--heading-color);
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--highlight-color);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+textarea {
+  min-height: 160px;
+}
+
+textarea:is(:focus, :active),
+input:is(:focus, :active) {
+  outline: 4px solid var(--highlight-color);
+}
+
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .page-title {
+    margin-top: 175px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    margin-top: 75px;
+  }
+}

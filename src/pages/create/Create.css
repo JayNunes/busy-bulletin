@@ -1,0 +1,15 @@
+.create-form {
+  max-width: 600px;
+}
+
+.create-form textarea,
+.create-form input,
+.create-form span {
+  color: var(--heading-color) !important;
+}
+
+.create-form textarea,
+.create-form input {
+  background-color: transparent;
+  font-size: 18px;
+}
